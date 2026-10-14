@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">窗前的手沖咖啡日常</title>
+  <desc id="desc">室內木桌與椅子靠著大窗，桌上有濾杯、咖啡壺和手沖壺；窗外是陽光、白雲與層疊山景。</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#5aa9dd"/>
+      <stop offset=".58" stop-color="#b9e2f3"/>
+      <stop offset="1" stop-color="#f8e7c7"/>
+    </linearGradient>
+    <linearGradient id="glass" x2="1" y2="1">
+      <stop stop-color="#effaff" stop-opacity=".74"/>
+      <stop offset=".42" stop-color="#c8e4e8" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#6a9294" stop-opacity=".44"/>
+    </linearGradient>
+    <linearGradient id="wood" x2="0" y2="1">
+      <stop stop-color="#b77b4d"/>
+      <stop offset=".38" stop-color="#805034"/>
+      <stop offset="1" stop-color="#432b22"/>
+    </linearGradient>
+    <linearGradient id="chairWood" x2="1" y2="1">
+      <stop stop-color="#bd8a5c"/>
+      <stop offset="1" stop-color="#67402d"/>
+    </linearGradient>
+    <linearGradient id="room" x2="0" y2="1">
+      <stop stop-color="#332d24"/>
+      <stop offset=".52" stop-color="#75604a"/>
+      <stop offset="1" stop-color="#241e19"/>
+    </linearGradient>
+    <radialGradient id="sunGlow">
+      <stop stop-color="#fff9d7" stop-opacity=".95"/>
+      <stop offset=".2" stop-color="#fff2bd" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#ffdfa0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.7">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="11"/>
+      <feOffset dy="13"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="window">
+      <rect x="92" y="92" width="1016" height="590" rx="3"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#room)"/>
+  <rect x="0" y="0" width="1200" height="70" fill="#211e19"/>
+  <path d="M0 70h1200v30H0z" fill="#59432f"/>
+  <rect x="68" y="68" width="1064" height="634" rx="9" fill="#211f1a"/>
+  <rect x="82" y="82" width="1036" height="610" fill="#b29368"/>
+  <g clip-path="url(#window)">
+    <rect x="92" y="92" width="1016" height="590" fill="url(#sky)"/>
+    <circle cx="887" cy="228" r="213" fill="url(#sunGlow)"/>
+    <circle cx="887" cy="228" r="58" fill="#fff5cd"/>
+    <path d="M95 273c118-29 182 15 263 3 86-13 153-34 243-10 84 22 138 2 235-9 91-10 176 26 270 5v186H95z" fill="#f4fbff" opacity=".25"/>
+    <g fill="#fff" opacity=".86">
+      <path d="M168 218c8-27 41-34 60-15 16-38 74-34 83 8 34-7 53 10 49 32H171c-20-1-22-17-3-25z"/>
+      <path d="M477 165c11-32 51-40 74-17 19-46 88-40 99 10 39-8 63 12 58 38H481c-22-2-26-20-4-31z"/>
+      <path d="M984 321c7-23 35-30 52-13 14-33 64-29 72 7 29-6 46 9 42 28h-153c-18-1-20-15-13-22z"/>
+      <path d="M371 327c8-23 36-30 53-13 14-34 66-30 74 7 29-6 47 9 43 28H384c-18-1-20-15-13-22z" opacity=".72"/>
+    </g>
+    <path d="M92 467 224 360l96 78 142-171 126 161 107-124 129 141 109-126 175 152v160H92z" fill="#89aeb0"/>
+    <path d="m92 484 147-119 82 65 142-176 124 174 98-112 128 149 104-133 191 157v128H92z" fill="#668e8d"/>
+    <path d="m92 501 155-78 83 58 139-95 142 109 104-75 143 87 109-69 141 75v121H92z" fill="#416f6b"/>
+    <path d="M92 520c146-42 241-7 359-26 130-22 243-5 353-23 103-17 202 4 304-19v230H92z" fill="#315b50"/>
+    <g fill="#24483f" opacity=".72">
+      <path d="m140 497 18-57 18 57h-10l20 56h-56l20-56z"/>
+      <path d="m253 500 14-45 15 45h-9l17 49h-45l17-49z"/>
+      <path d="m941 503 18-59 19 59h-11l20 57h-56l20-57z"/>
+      <path d="m1031 499 13-42 14 42h-8l16 46h-42l16-46z"/>
+    </g>
+    <path d="M92 605c216-44 387-17 564-20 154-3 282-34 452-10v107H92z" fill="#a7aa7c" opacity=".45"/>
+    <path d="M790 92 960 92 1108 682H945z" fill="#fff5d9" opacity=".12"/>
+  </g>
+
+  <rect x="82" y="82" width="1036" height="610" fill="none" stroke="#d8bf94" stroke-width="13"/>
+  <path d="M431 89v601M786 89v601M89 379h1022" fill="none" stroke="#765f43" stroke-width="18"/>
+  <path d="M440 96v584M795 96v584M98 388h1000" fill="none" stroke="#eedab2" stroke-opacity=".55" stroke-width="3"/>
+  <rect x="50" y="686" width="1100" height="26" rx="3" fill="#d0ae79"/>
+  <path d="M0 715h1200v185H0z" fill="#32271f"/>
+  <path d="M0 723h1200v18H0z" fill="#806044"/>
+
+  <g opacity=".35" filter="url(#soft)">
+    <ellipse cx="636" cy="793" rx="502" ry="72" fill="#120f0d"/>
+  </g>
+
+  <!-- Chair -->
+  <g filter="url(#shadow)">
+    <path d="M127 495q0-20 20-20h151q20 0 20 20v174H127z" fill="url(#chairWood)" stroke="#432d22" stroke-width="12"/>
+    <path d="M169 486v172M211 482v176M253 482v176M295 486v172" stroke="#d2a675" stroke-opacity=".75" stroke-width="8"/>
+    <path d="M119 659h206l25 31H106z" fill="#9d704a" stroke="#432d22" stroke-width="9"/>
+    <path d="m133 683-16 183m199-174 27 172" fill="none" stroke="#5c3a28" stroke-width="18"/>
+    <path d="m160 694 8 176m127-172-2 174" fill="none" stroke="#a17751" stroke-width="7"/>
+  </g>
+
+  <!-- Table -->
+  <path d="M338 646h892v39H338z" fill="#c18a59"/>
+  <path d="M354 683h861l-48 217H401z" fill="url(#wood)"/>
+  <path d="M379 695h815M391 735h793M400 781h773M408 832h757" fill="none" stroke="#d09a66" stroke-opacity=".26" stroke-width="4"/>
+  <path d="M349 686h867" fill="none" stroke="#e0b17a" stroke-width="5" opacity=".7"/>
+
+  <!-- Pour-over kettle -->
+  <g transform="translate(863 536)" filter="url(#shadow)">
+    <path d="M17 77q5-71 81-71 80 0 84 71l-9 45H25z" fill="#c7c5bb" stroke="#56544d" stroke-width="8"/>
+    <path d="M174 73q40-33 80-19l-65 31" fill="#d3d0c4" stroke="#56544d" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M61 10q6-53 43-51 40 2 39 52" fill="none" stroke="#4b4942" stroke-width="12"/>
+    <path d="M67 90h97" stroke="#f1eee4" stroke-width="7" opacity=".6"/>
+    <path d="M22 121h145" stroke="#433e36" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="103" cy="4" r="12" fill="#dfd6c5" stroke="#56544d" stroke-width="5"/>
+  </g>
+
+  <!-- Dripper and glass coffee server -->
+  <g transform="translate(540 486)" filter="url(#shadow)">
+    <path d="M45 29h145l-28 116q-44 34-89 0z" fill="#d9e3df" fill-opacity=".92" stroke="#596d68" stroke-width="8"/>
+    <path d="M60 47h115l-20 86q-39 27-76 0z" fill="#b98256" opacity=".42"/>
+    <path d="M57 47h121M69 72h97M76 96h83" fill="none" stroke="#f5f4ec" stroke-width="5" opacity=".75"/>
+    <path d="M104 145v31" stroke="#5c5143" stroke-width="10"/>
+    <path d="M45 173h145" stroke="#5c5143" stroke-width="9" stroke-linecap="round"/>
+    <path d="M78 184q3 58 39 66h42q34-8 37-66l-4-10H80z" fill="url(#glass)" stroke="#e4ede8" stroke-width="7"/>
+    <path d="M89 217q47 12 94 0v23q-44 26-89 0z" fill="#75442d" opacity=".9"/>
+    <path d="M102 198v38M167 198v38" stroke="#fff" stroke-opacity=".6" stroke-width="4"/>
+    <path d="M101 176q17-18 37 0" fill="none" stroke="#a5b9b3" stroke-width="5"/>
+    <path d="M135 166c-20-24 16-31-3-54M164 163c-14-20 15-26 2-44" fill="none" stroke="#fff" stroke-opacity=".72" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Small coffee cup -->
+  <g transform="translate(733 635)">
+    <ellipse cx="58" cy="47" rx="54" ry="15" fill="#49342a"/>
+    <path d="M15 10h79l-7 62q-32 21-65 0z" fill="#f2eee4" stroke="#9f927c" stroke-width="5"/>
+    <path d="M94 24q39-8 27 28-7 18-31 14" fill="none" stroke="#e9e1d2" stroke-width="11"/>
+    <ellipse cx="54" cy="12" rx="39" ry="9" fill="#4b2d20"/>
+    <path d="M33 12q20-14 41 0-20 12-41 0" fill="#b27b4d"/>
+  </g>
+
+  <rect width="1200" height="900" fill="none" stroke="#211d18" stroke-width="28" opacity=".42"/>
+</svg>
