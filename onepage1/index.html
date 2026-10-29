@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="藍天咖啡，為手沖咖啡愛好者挑選當季精品咖啡豆，讓每一杯都清澈、明亮、值得細品。">
-  <title>藍天咖啡｜讓風味，慢慢抵達</title>
+  <meta name="description" content="MiHao Cafe 為手沖咖啡愛好者挑選當季精品咖啡豆，分享產地風味與沖煮日常，讓每一杯都值得細品。">
+  <title>MiHao Cafe｜讓風味，慢慢抵達</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -176,40 +176,20 @@
     .scroll-note { display: flex; align-items: center; gap: 10px; margin: 53px 0 0; color: rgba(255,255,255,.55); font-size: 9px; letter-spacing: .18em; }
     .scroll-note::before { width: 38px; height: 1px; background: rgba(255,255,255,.45); content: ""; }
 
-    .hero-art {
-      position: relative;
-      width: min(100%, 400px);
-      height: 300px;
-      min-height: 0;
-      margin-left: auto;
-      overflow: visible;
-      aspect-ratio: auto;
-      border: 0;
-      background: transparent;
-      box-shadow: none;
-    }
-    .hero-photo { width: 400px; height: 300px; object-fit: cover; box-shadow: 24px 24px 0 rgba(117,198,232,.13), var(--shadow); }
-    .window-frame { position: absolute; inset: 0; border: 12px solid #e8d4ae; box-shadow: inset 0 0 0 2px rgba(6,39,66,.18); }
-    .window-frame::before, .window-frame::after { position: absolute; background: rgba(6,39,66,.25); content: ""; }
-    .window-frame::before { top: 0; bottom: 0; left: 49%; width: 4px; }
-    .window-frame::after { top: 46%; right: 0; left: 0; height: 4px; }
-    .sun { position: absolute; top: 16%; right: 17%; width: 77px; height: 77px; border-radius: 50%; background: #fff2be; box-shadow: 0 0 45px 22px rgba(255,228,150,.42); }
-    .mountain { position: absolute; bottom: 28%; width: 75%; height: 36%; clip-path: polygon(0 100%, 35% 15%, 48% 50%, 63% 0, 100% 100%); background: #497b83; opacity: .9; }
-    .mountain.one { left: -12%; }
-    .mountain.two { right: -27%; bottom: 27%; background: #30616b; transform: scaleX(-1); opacity: .75; }
-    .tabletop { position: absolute; right: -8%; bottom: -7%; left: -8%; height: 33%; background: linear-gradient(#643e2e 0%, #3d251e 100%); transform: perspective(200px) rotateX(10deg); }
-    .chair { position: absolute; right: 7%; bottom: 18%; width: 100px; height: 112px; border: 12px solid #543126; border-bottom: 0; border-radius: 48px 48px 0 0; opacity: .8; }
-    .chair::after { position: absolute; bottom: -75px; left: 14px; width: 8px; height: 75px; background: #543126; box-shadow: 53px 0 #543126; content: ""; }
-    .coffee-vessel { position: absolute; bottom: 14%; left: 28%; width: 112px; height: 105px; }
-    .coffee-vessel .dripper { position: absolute; top: 0; left: 29px; width: 53px; height: 45px; border: 3px solid #d8e7e1; border-radius: 5px 5px 22px 22px; background: linear-gradient(135deg, rgba(222,246,240,.75), rgba(124,180,181,.2)); clip-path: polygon(0 0, 100% 0, 78% 100%, 22% 100%); }
-    .coffee-vessel .carafe { position: absolute; bottom: 0; left: 17px; width: 78px; height: 68px; border: 3px solid #d8e7e1; border-radius: 10px 10px 23px 23px; background: linear-gradient(to top, rgba(56,29,19,.82) 0 38%, rgba(190,228,227,.24) 39%); }
-    .coffee-vessel .carafe::before { position: absolute; top: -20px; left: 24px; width: 26px; height: 22px; border: 3px solid #d8e7e1; border-bottom: 0; border-radius: 50% 50% 0 0; content: ""; }
-    .steam { position: absolute; bottom: 59%; left: 49%; width: 23px; height: 58px; border-left: 2px solid rgba(255,255,255,.63); border-radius: 50%; transform: rotate(16deg); }
-    .steam::after { position: absolute; top: -5px; left: 14px; width: 18px; height: 48px; border-right: 2px solid rgba(255,255,255,.44); border-radius: 50%; content: ""; }
-    .art-label { position: absolute; z-index: 3; right: -11px; top: 42%; display: grid; gap: 2px; padding: 10px 11px; border-left: 2px solid var(--sand); background: rgba(6,39,66,.86); color: #fff; }
-    .art-label strong { font-family: "Playfair Display", serif; font-size: 22px; line-height: 1; }
-    .art-label span { color: var(--sky); font-size: 9px; letter-spacing: .09em; }
-    .art-label small { color: rgba(255,255,255,.72); font-size: 9px; }
+    .hero-art { position: relative; align-self: center; width: min(100%, 400px); margin-left: auto; overflow: visible; }
+    .hero-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; box-shadow: var(--shadow); }
+    .hero-art .sun { position: absolute; top: 52px; right: 54px; width: clamp(138px, 18vw, 200px); aspect-ratio: 1; border-radius: 50%; background: #d9eefa; box-shadow: 0 0 0 27px rgba(117,198,232,.12), 0 0 0 59px rgba(117,198,232,.06); }
+    .mountain { position: absolute; right: -11%; bottom: 6px; width: 116%; height: 260px; transform: skewY(-9deg); transform-origin: right bottom; background: linear-gradient(146deg, transparent 0 27%, rgba(91,145,178,.42) 27.3% 48%, rgba(38,86,133,.88) 48.3%); clip-path: polygon(0 62%, 28% 20%, 44% 57%, 68% 4%, 100% 57%, 100% 100%, 0 100%); }
+    .mountain--back { right: 13%; bottom: 98px; width: 108%; height: 220px; opacity: .46; transform: skewY(-4deg); background: #0c5b95; clip-path: polygon(0 84%, 31% 30%, 45% 62%, 66% 9%, 100% 66%, 100% 100%, 0 100%); }
+    .horizon { position: absolute; right: -4%; bottom: 0; width: 116%; height: 112px; background: linear-gradient(90deg, rgba(6,39,66,.58), #315f83); transform: skewY(-4deg); }
+    .coffee-vessel { position: absolute; z-index: 4; right: 18%; bottom: 36px; width: 192px; height: 274px; filter: drop-shadow(18px 22px 14px rgba(0,0,0,.22)); }
+    .vessel-neck { position: absolute; top: 0; left: 62px; width: 68px; height: 42px; border: 7px solid #c9e6f4; border-bottom: 0; border-radius: 50% 50% 0 0; background: rgba(6,39,66,.72); }
+    .vessel-body { position: absolute; top: 33px; left: 18px; width: 150px; height: 212px; overflow: hidden; border: 7px solid #c9e6f4; border-radius: 31% 31% 42% 42% / 12% 12% 37% 37%; background: linear-gradient(90deg, rgba(12,91,149,.92), rgba(6,39,66,.95) 45%, rgba(55,117,174,.9)); }
+    .vessel-body::before { position: absolute; top: 15px; left: 0; width: 100%; height: 5px; background: rgba(197,237,244,.8); box-shadow: 0 48px rgba(197,237,244,.25), 0 95px rgba(197,237,244,.18), 0 145px rgba(197,237,244,.13); content: ""; }
+    .vessel-body::after { position: absolute; top: 5px; left: 48%; width: 24px; height: 200px; border-radius: 50%; background: rgba(218,247,251,.17); content: ""; }
+    .vessel-handle { position: absolute; right: 0; bottom: 49px; width: 62px; height: 98px; border: 10px solid #c9e6f4; border-left: 0; border-radius: 0 53px 53px 0; }
+    .art-label { position: absolute; z-index: 5; right: -14px; bottom: 18px; display: grid; gap: 3px; padding: 12px 14px; border-left: 2px solid var(--sand); color: #fff; background: rgba(6,39,66,.91); box-shadow: var(--shadow); font-size: 10px; letter-spacing: .08em; }
+    .art-label strong { color: var(--sand); font: 600 22px/1 "Playfair Display", serif; }
 
     .story { padding: 115px 0 120px; background: #fff; }
     .story-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(45px, 9vw, 105px); align-items: center; }
@@ -226,7 +206,7 @@
       color: var(--navy);
       text-align: center;
     }
-    .story-seal::before { display: block; margin-bottom: 14px; color: var(--blue); content: "B"; font-family: "Playfair Display", serif; font-size: 73px; line-height: 1; }
+    .story-seal::before { display: block; margin-bottom: 14px; color: var(--blue); content: "M"; font-family: "Playfair Display", serif; font-size: 73px; line-height: 1; }
     .story-seal strong { font-family: "Noto Serif TC", serif; font-size: 18px; letter-spacing: .09em; }
     .story-seal span { margin-top: 10px; color: var(--blue); font-size: 9px; font-weight: 700; letter-spacing: .15em; }
     .note-card { position: absolute; right: 0; bottom: 0; width: min(225px, 57%); padding: 25px; background: var(--navy); color: #fff; box-shadow: var(--shadow); }
@@ -353,8 +333,7 @@
       .hero-grid { grid-template-columns: 1fr; gap: 17px; padding-top: 112px; }
       .hero-content { max-width: 640px; }
       .scroll-note { margin-top: 29px; }
-      .hero-art { width: min(100%, 330px); height: 248px; min-height: 0; max-height: none; margin: 0; }
-      .hero-photo { width: 330px; height: 248px; }
+      .hero-art { width: min(100%, 400px); min-height: 0; margin: 0 auto; }
       .coffee-grid { grid-template-columns: repeat(2, 1fr); }
       .coffee-card:nth-child(3) { grid-column: span 2; }
       .story-grid, .brew-grid { grid-template-columns: 1fr; }
@@ -375,18 +354,15 @@
       .hero-actions { margin-top: 23px; }
       .hero-actions .button { flex: 1; padding-inline: 13px; }
       .hero-meta { margin-top: 18px; }
-      .hero-art { width: 260px; height: 195px; min-height: 0; max-height: none; }
-      .hero-photo { width: 260px; height: 195px; }
-      .art-label { display: none; }
-      .sun { width: 49px; height: 49px; }
-      .coffee-vessel { bottom: 9%; left: 25%; transform: scale(.72); transform-origin: bottom left; }
-      .chair { transform: scale(.72); transform-origin: bottom right; }
+      .hero-art { width: 100%; }
+      .art-label { right: -6px; bottom: 10px; }
       .story, .coffee, .brew, .visit { padding: 76px 0; }
-      .story-seal { width: 245px; height: 245px; }
+      .story-visual { min-width: 0; }
+      .story-seal { width: min(245px, calc(100vw - 60px)); height: auto; aspect-ratio: 1; }
       .story-seal::before { margin-bottom: 8px; font-size: 54px; }
       .story-seal strong { font-size: 15px; }
       .story-visual { min-height: 315px; }
-      .note-card { width: 185px; padding: 18px; }
+      .note-card { width: min(185px, 85%); padding: 18px; }
       .note-card p:last-child { font-size: 14px; }
       .coffee-heading { display: block; margin-bottom: 30px; }
       .coffee-heading .section-copy { margin-top: 14px; }
@@ -412,9 +388,9 @@
 <body>
   <header class="site-header" id="top">
     <nav class="wrap navbar" aria-label="主要導覽">
-      <a class="brand" href="#top" aria-label="回到藍天咖啡首頁">
-        <span class="brand-mark" aria-hidden="true">B</span>
-        <span class="brand-copy"><strong>藍天咖啡</strong><small>BLUE SKY COFFEE</small></span>
+      <a class="brand" href="#top" aria-label="回到 MiHao Cafe 首頁">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-copy"><strong>MiHao Cafe</strong><small>MiHao Cafe</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="開啟導覽選單">☰</button>
       <div class="nav-links" id="navLinks">
@@ -431,19 +407,19 @@
       <div class="wrap hero-grid">
         <div class="hero-content">
           <p class="eyebrow">HAND BREWED · SLOWLY ROASTED</p>
-          <h1 class="hero-title" id="heroTitle">讓風味，在<span class="sky-word">藍天</span>下慢慢抵達。</h1>
-          <p class="hero-lede">藍天咖啡為喜歡手沖的您，挑選值得細品的單一產區咖啡豆。從第一縷花香，到最後一口回甘，每一杯都有屬於自己的晴朗天氣。</p>
+          <h1 class="hero-title" id="heroTitle">讓風味，<br>在 <span class="sky-word">MiHao</span> 裡<br>慢慢抵達。</h1>
+          <p class="hero-lede">MiHao Cafe 為喜歡手沖的您，挑選值得細品的單一產區咖啡豆。從第一縷花香，到最後一口回甘，每一杯都有屬於自己的晴朗天氣。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#coffee">探索本季咖啡豆 →</a>
-            <a class="button button-outline" href="#story">認識藍天</a>
+            <a class="button button-outline" href="#story">認識 MiHao Cafe</a>
           </div>
           <p class="hero-meta">TAIPEI · TAIWAN · EST. 2025</p>
           <p class="scroll-note">SCROLL TO DISCOVER</p>
         </div>
 
-        <div class="hero-art" aria-hidden="true">
-          <img class="hero-photo" src="images/hero-new.svg" width="400" height="300" alt="">
-          <span class="art-label"><strong>92°C</strong><span>理想水溫</span><small>細細喚醒香氣</small></span>
+        <div class="hero-art reveal">
+          <img class="hero-photo" src="images/hero.jpg" width="400" height="300" alt="窗邊的手沖咖啡與遠方山景">
+          <div class="art-label"><strong>92°C</strong><span>理想水溫</span><small>細細喚醒香氣</small></div>
         </div>
       </div>
     </section>
@@ -452,7 +428,7 @@
       <div class="wrap story-grid">
         <div class="story-visual reveal" aria-hidden="true">
           <div class="story-seal"><strong>慢一點，<br>更清楚。</strong><span>LET THE FLAVOUR SPEAK</span></div>
-          <div class="note-card"><p>BLUE SKY NOTE</p><p>一杯好咖啡，從來不是匆忙完成的事。</p></div>
+          <div class="note-card"><p>MIHAO NOTE</p><p>一杯好咖啡，從來不是匆忙完成的事。</p></div>
         </div>
         <div class="story-content reveal">
           <p class="eyebrow">OUR PHILOSOPHY</p>
@@ -469,7 +445,7 @@
         <div class="coffee-heading reveal">
           <div>
             <p class="eyebrow">SEASONAL SELECTION</p>
-            <h2 class="section-title" id="coffeeTitle">今天，想喝哪一片<span class="accent">藍天</span>？</h2>
+            <h2 class="section-title" id="coffeeTitle">今天，想喝哪一款 MiHao？</h2>
           </div>
           <p class="section-copy">三款當季單品，為不同的晨光、午後與靜夜而選。</p>
         </div>
@@ -520,7 +496,7 @@
 
     <section class="visit" id="visit" aria-labelledby="visitTitle">
       <div class="wrap reveal">
-        <p class="eyebrow">THE BLUE SKY LETTER</p>
+        <p class="eyebrow">THE MIHAO LETTER</p>
         <h2 class="section-title" id="visitTitle">把下一杯好咖啡，寄到你的日常裡。</h2>
         <p class="section-copy">每月一封風味通信，分享新豆、沖煮靈感與只給會員的小小驚喜。</p>
         <form class="subscribe-form" id="subscribeForm">
@@ -534,19 +510,19 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="#top" aria-label="回到藍天咖啡首頁"><span class="brand-mark" aria-hidden="true">B</span><span class="brand-copy"><strong>藍天咖啡</strong><small>BLUE SKY COFFEE</small></span></a>
+        <a class="brand" href="#top" aria-label="回到 MiHao Cafe 首頁"><span class="brand-mark" aria-hidden="true">M</span><span class="brand-copy"><strong>MiHao Cafe</strong><small>MiHao Cafe</small></span></a>
         <p>為喜歡手沖咖啡的你，留下一段慢慢品味、微微放晴的時間。</p>
       </div>
       <div>
-        <p class="footer-heading">EXPLORE</p>
+        <p class="footer-heading">網站主題</p>
         <div class="footer-links"><a href="#story">我們的故事</a><a href="#coffee">本季選豆</a><a href="#brew">沖煮日常</a></div>
       </div>
       <div>
-        <p class="footer-heading">CONTACT</p>
-        <div class="footer-contact"><a href="mailto:hello@bluesky.coffee">hello@bluesky.coffee</a><span>台中市西屯區晨光路 100 號</span><span>每日 10:00 — 19:00</span></div>
+        <p class="footer-heading">聯絡我們</p>
+        <div class="footer-contact"><a href="mailto:hello@mihao.cafe">hello@mihao.cafe</a><span>台中市西屯區僑光路 100 號</span><span>每日 10:00 — 19:00</span></div>
       </div>
     </div>
-    <div class="wrap footer-bottom"><span>© 2025 BLUE SKY COFFEE. ALL RIGHTS RESERVED.</span><span>BREW SLOW · LIVE BRIGHT</span></div>
+    <div class="wrap footer-bottom"><span>© 2025 MiHao Cafe. ALL RIGHTS RESERVED.</span><span>BREW SLOW · LIVE BRIGHT</span></div>
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

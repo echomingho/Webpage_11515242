@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="藍天咖啡，為手沖咖啡愛好者挑選當季精品咖啡豆，讓每一杯都清澈、明亮、值得細品。">
-  <title>藍天咖啡｜讓風味，慢慢抵達</title>
+  <meta name="description" content="MiHao Cafe 為手沖咖啡愛好者挑選當季精品咖啡豆，分享產地風味與沖煮日常，讓每一杯都值得細品。">
+  <title>MiHao Cafe｜讓風味，慢慢抵達</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -163,10 +163,8 @@
     .hero-place { margin: 32px 0 0; color: rgba(255,255,255,.58); font-size: 10px; font-weight: 700; letter-spacing: .17em; }
     .scroll-hint { position: absolute; bottom: 31px; left: max(24px, calc((100% - 1120px) / 2)); display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.52); font-size: 9px; font-weight: 700; letter-spacing: .16em; }
     .scroll-hint::before { width: 38px; height: 1px; background: currentColor; content: ""; }
-    .hero-art { position: relative; justify-self: end; width: min(100%, 450px); padding: 21px 21px 25px 0; }
-    .hero-art::before { position: absolute; top: 1px; right: 0; width: 310px; height: 310px; border: 1px solid rgba(255,255,255,.26); border-radius: 50%; content: ""; }
-    .hero-art::after { position: absolute; right: 34px; bottom: -20px; width: 205px; height: 205px; border: 1px solid rgba(117,198,232,.4); border-radius: 50%; content: ""; }
-    .hero-photo { position: relative; z-index: 1; width: 400px; height: 300px; margin-left: auto; object-fit: cover; box-shadow: var(--shadow); }
+    .hero-art { position: relative; justify-self: end; width: min(100%, 400px); margin-left: auto; overflow: visible; }
+    .hero-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; box-shadow: var(--shadow); }
     .art-note { position: absolute; z-index: 2; right: -16px; bottom: 15px; display: grid; width: 113px; gap: 1px; padding: 14px 15px; color: #fff; background: rgba(6,39,66,.91); box-shadow: var(--shadow); }
     .art-note strong { color: var(--sand); font-family: "Playfair Display", serif; font-size: 27px; font-weight: 600; line-height: 1; }
     .art-note span { font-size: 10px; font-weight: 700; letter-spacing: .08em; }
@@ -270,7 +268,7 @@
       .nav-links .nav-cta { display: inline-block; margin-top: 6px; padding: 8px 12px; }
       .hero { min-height: 710px; }
       .hero-inner { grid-template-columns: 1fr; gap: 18px; padding-top: 118px; }
-      .hero-art { width: min(100%, 510px); margin: 0 auto; padding-top: 0; justify-self: center; transform: scale(.72); transform-origin: top center; height: 245px; }
+      .hero-art { width: min(100%, 400px); margin: 0 auto; justify-self: center; }
       .scroll-hint { display: none; }
       .story-grid, .brew-grid { grid-template-columns: 1fr; }
       .story-visual { max-width: 450px; width: 100%; margin: 0 auto; }
@@ -289,13 +287,14 @@
       .hero-lede { margin-top: 19px; font-size: 14px; line-height: 1.85; }
       .hero-actions { margin-top: 24px; }
       .hero-place { margin-top: 22px; }
-      .hero-art { height: 203px; transform: scale(.62); }
-      .art-note { display: none; }
+      .hero-art { width: 100%; }
+      .art-note { right: -6px; bottom: 10px; }
       .story, .coffee, .brew, .visit { padding-top: 76px; padding-bottom: 76px; }
       .story-visual { min-height: 330px; }
-      .story-disc { width: 245px; height: 245px; }
+      .story-visual { min-width: 0; }
+      .story-disc { width: min(245px, calc(100vw - 60px)); height: auto; aspect-ratio: 1; }
       .story-disc b { font-size: 23px; }
-      .story-card { width: 185px; padding: 21px; }
+      .story-card { width: min(185px, 85%); padding: 21px; }
       .story-card p { font-size: 15px; }
       .section-heading { display: block; margin-bottom: 31px; }
       .section-heading .section-copy { margin-top: 15px; }
@@ -321,9 +320,9 @@
 <body>
   <header class="site-header" id="top">
     <nav class="nav-bar wrap" aria-label="主要導覽">
-      <a class="brand" href="#top" aria-label="回到藍天咖啡首頁">
-        <span class="brand-mark" aria-hidden="true">B</span>
-        <span class="brand-name">藍天咖啡 <small>BLUE SKY COFFEE</small></span>
+      <a class="brand" href="#top" aria-label="回到 MiHao Cafe 首頁">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-name">MiHao Cafe <small>MiHao Cafe</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="開啟導覽選單">☰</button>
       <ul class="nav-links" id="navLinks">
@@ -340,17 +339,17 @@
       <div class="hero-inner">
         <div class="hero-content reveal">
           <p class="eyebrow">HAND BREWED · SLOWLY ROASTED</p>
-          <h1 class="hero-title" id="heroTitle">讓風味，在<span class="sky-text">藍天</span>下<br>慢慢抵達。</h1>
-          <p class="hero-lede">藍天咖啡為喜歡手沖的您，挑選值得細品的單一產區咖啡豆。從第一縷花香，到最後一口回甘，每一杯都有屬於自己的晴朗天氣。</p>
+          <h1 class="hero-title" id="heroTitle">讓風味，<br>在 <span class="sky-text">MiHao</span> 裡<br>慢慢抵達。</h1>
+          <p class="hero-lede">MiHao Cafe 為喜歡手沖的您，挑選值得細品的單一產區咖啡豆。從第一縷花香，到最後一口回甘，每一杯都有屬於自己的晴朗天氣。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#coffee">探索本季咖啡豆 →</a>
-            <a class="button button-secondary" href="#story">認識藍天</a>
+            <a class="button button-secondary" href="#story">認識 MiHao Cafe</a>
           </div>
           <p class="hero-place">TAIPEI · TAIWAN · EST. 2025</p>
         </div>
-        <div class="hero-art reveal" aria-label="窗邊手沖咖啡與山景">
+        <div class="hero-art reveal">
           <img class="hero-photo" src="images/hero.jpg" width="400" height="300" alt="窗邊的手沖咖啡與遠方山景">
-          <div class="art-note" aria-hidden="true"><strong>92°C</strong><span>理想水溫</span><small>細細喚醒香氣</small></div>
+          <div class="art-note"><strong>92°C</strong><span>理想水溫</span><small>細細喚醒香氣</small></div>
         </div>
       </div>
       <span class="scroll-hint" aria-hidden="true">SCROLL TO DISCOVER</span>
@@ -360,7 +359,7 @@
       <div class="wrap story-grid">
         <div class="story-visual reveal" aria-hidden="true">
           <div class="story-disc"><b>慢一點，<br>更清楚。</b><span>LET THE FLAVOUR SPEAK</span></div>
-          <div class="story-card"><span class="card-label">BLUE SKY NOTE</span><p>一杯好咖啡，從來不是匆忙完成的事。</p></div>
+          <div class="story-card"><span class="card-label">MIHAO NOTE</span><p>一杯好咖啡，從來不是匆忙完成的事。</p></div>
         </div>
         <div class="story-copy reveal">
           <p class="eyebrow">OUR PHILOSOPHY</p>
@@ -377,7 +376,7 @@
         <div class="section-heading reveal">
           <div>
             <p class="eyebrow">SEASONAL SELECTION</p>
-            <h2 class="section-title" id="coffeeTitle">今天，想喝哪一片<span class="blue-word">藍天</span>？</h2>
+            <h2 class="section-title" id="coffeeTitle">今天，想喝哪一款 MiHao？</h2>
           </div>
           <p class="section-copy">三款當季單品，為不同的晨光、午後與靜夜而選。</p>
         </div>
@@ -410,7 +409,7 @@
     <section class="brew" id="brew" aria-labelledby="brewTitle">
       <div class="wrap brew-grid">
         <div class="video-frame reveal">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/hMOYa4EBntI" title="藍天咖啡沖煮影片" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hMOYa4EBntI" title="MiHao Cafe 手沖咖啡沖煮影片" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="brew-copy reveal">
           <p class="eyebrow">A QUIET RITUAL</p>
@@ -427,7 +426,7 @@
 
     <section class="visit" id="visit" aria-labelledby="visitTitle">
       <div class="wrap visit-inner reveal">
-        <p class="eyebrow">THE BLUE SKY LETTER</p>
+        <p class="eyebrow">THE MIHAO LETTER</p>
         <h2 class="visit-title" id="visitTitle">把下一杯好咖啡，寄到你的日常裡。</h2>
         <p class="visit-copy">每月一封風味通信，分享新豆、沖煮靈感與只給會員的小小驚喜。</p>
         <form class="subscribe-form" id="subscribeForm">
@@ -442,7 +441,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="brand" href="#top" aria-label="回到藍天咖啡首頁"><span class="brand-mark" aria-hidden="true">B</span><span class="brand-name">藍天咖啡 <small>BLUE SKY COFFEE</small></span></a>
+          <a class="brand" href="#top" aria-label="回到 MiHao Cafe 首頁"><span class="brand-mark" aria-hidden="true">M</span><span class="brand-name">MiHao Cafe <small>MiHao Cafe</small></span></a>
           <p>為喜愛手沖咖啡的你，留下一段慢慢品味、微微放晴的時間。</p>
         </div>
         <div>
@@ -451,10 +450,10 @@
         </div>
         <div>
           <p class="footer-title">聯絡我們</p>
-          <ul class="footer-links"><li><a href="mailto:hello@bluesky.coffee">hello@bluesky.coffee</a></li><li>台中市西屯區僑光路 100 號</li><li>每日 10:00 — 19:00</li></ul>
+          <ul class="footer-links"><li><a href="mailto:hello@mihao.cafe">hello@mihao.cafe</a></li><li>台中市西屯區僑光路 100 號</li><li>每日 10:00 — 19:00</li></ul>
         </div>
       </div>
-      <div class="footer-bottom"><span>© 2025 BLUE SKY COFFEE. ALL RIGHTS RESERVED.</span><span>BREW SLOW · LIVE BRIGHT</span></div>
+      <div class="footer-bottom"><span>© 2025 MiHao Cafe. ALL RIGHTS RESERVED.</span><span>BREW SLOW · LIVE BRIGHT</span></div>
     </div>
   </footer>
 
